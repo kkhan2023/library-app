@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <title>Library App Project</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <aside>
+        <div class="logo">
+          <img
+            src="assets/MyLibraryApp.png"
+            width="300px"
+            alt="my library app"
+          />
+        </div>
+        <h2>Add a book to library</h2>
+        <form id="book-form">
+          <label for="title">Book Title*</label>
+          <input
+            type="text"
+            placeholder="Harry Potter"
+            data-value="1"
+            required
+          />
+          <label for="author">Book Author*</label>
+          <input
+            type="text"
+            placeholder="J.K Rowling"
+            data-value="2"
+            required
+          />
+          <label for="pages"># of Pages*</label>
+          <input type="number" placeholder="400" data-value="3" required />
+          <div class="checkbox-row">
+            <label for="read">Completed?</label>
+            <input type="checkbox" data-value="4" data-id="read-status" />
+          </div>
+          <div class="submit-row">
+            <button type="submit">Add Book</button>
+          </div>
+        </form>
+      </aside>
+      <main>
+        <h2 class="current-books">Current Library Books: 0</h2>
+        <div class="book-grid">
+          <div class="card"></div>
+        </div>
+      </main>
+      <footer>
+        Made By Kasam Khan - The Odin Project
+        <a
+          href="https://github.com/kkhan2023"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
